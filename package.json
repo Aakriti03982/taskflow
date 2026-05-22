@@ -1,6 +1,5 @@
 {
   "name": "taskflow-frontend",
-  "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -9,16 +8,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "^1.4.0",
-    "date-fns": "^2.30.0",
+    "axios": "^1.6.2",
+    "date-fns": "^3.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.1"
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.21.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
-    "@vitejs/plugin-react": "^4.0.1",
-    "vite": "^4.4.4"
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8"
   }
 }
