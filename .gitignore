@@ -1,4 +1,22 @@
-node_modules/
-dist/
+# Maven build output
+backend/target/
+
+# Node - frontend source nahi chahiye GitHub pe
+# (already bundled inside backend/src/main/resources/static/)
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.class
+
+# Environment
 .env
-*.log
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
