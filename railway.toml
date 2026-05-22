@@ -1,7 +1,8 @@
 [build]
 builder = "NIXPACKS"
-buildCommand = "npm install && npm run build"
 
 [deploy]
-startCommand = "npx serve dist -l $PORT"
-healthcheckPath = "/"
+startCommand = "java -jar target/taskflow-backend-1.0.0.jar"
+healthcheckPath = "/api/health"
+healthcheckTimeout = 300
+restartPolicyType = "ON_FAILURE"
