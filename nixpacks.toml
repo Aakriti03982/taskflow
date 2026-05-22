@@ -1,0 +1,17 @@
+[phases.setup]
+nixPkgs = ["nodejs_20", "jdk17"]
+
+[phases.install]
+cmds = [
+  "cd frontend && npm ci",
+  "cd frontend && npm run build",
+  "cp -r frontend/dist/. backend/src/main/resources/static/"
+]
+
+[phases.build]
+cmds = [
+  "cd backend && ./mvnw clean package -DskipTests"
+]
+
+[start]
+cmd = "java -jar backend/target/taskflow-backend-1.0.0.jar"
